@@ -2,7 +2,7 @@
 
 Herramientas locales y notas de investigación de **Ema Curk / arku75**. [English](README.md)
 
-Esta primera versión publica dos utilidades nuevas, ejemplos sintéticos y una revisión estática anonimizada. Se preparó con asistencia de IA durante la revisión de una colección local más amplia. No significa que se haya subido toda esa colección ni que los proyectos de terceros sean de autoría propia.
+Esta versión publica dos utilidades nuevas, ejemplos sintéticos, una revisión estática anonimizada y un script inalámbrico recuperado como archivo experimental detenido por defecto. Las utilidades y la documentación nuevas se prepararon con asistencia de IA durante la revisión de una colección local más amplia. No significa que se haya subido toda esa colección ni que los proyectos de terceros sean de autoría propia.
 
 ## Qué puedes usar
 
@@ -35,10 +35,18 @@ python3 -m unittest discover -s tests -v
 
 Las pruebas usan archivos temporales y datos sintéticos; no actúan sobre redes, dispositivos ni servicios de terceros.
 
+## Archivo inalámbrico experimental
+
+Se conserva [`historical/wireless/wps_attack.sh`](historical/wireless/wps_attack.sh), un wrapper genérico cuya cabecera original atribuye la generación a Grok. Una guardia nueva lo detiene antes de comprobar privilegios, instalar programas o actuar sobre la red; `--help` permite consultar su alcance sin activarlo.
+
+La ruta original requiere privilegios, modifica interfaces y puede guardar claves inalámbricas. No se probó con hardware. Se preservan sus métodos originales y se documentan sus límites, junto con permisos privados para archivos nuevos y reglas para evitar subir resultados. Su licencia original no estaba indicada: **no se le aplica la licencia MIT de las utilidades nuevas ni se afirma autoría original de Ema Curk**.
+
+Lee la [procedencia, efectos y validación del archivo](historical/wireless/README.md).
+
 ## Investigación y atribución
 
 - [Caso defensivo: separar observaciones de conclusiones sobre cuentas](docs/ACCOUNT_ENUMERATION_REVIEW.md).
 - [Referencias oficiales de proyectos upstream](docs/UPSTREAM_REFERENCES.md).
 - [Qué incluye esta publicación y qué queda pendiente](docs/PUBLICATION_SCOPE.md).
 
-El código y la documentación nuevos usan [licencia MIT](LICENSE). Las referencias externas conservan sus propias licencias y su autoría. No se incluyen credenciales, datos de sesiones, listas de cuentas, material operativo de suplantación ni archivos privados de la colección original.
+Las utilidades, ejemplos, pruebas y documentación nuevos usan [licencia MIT con alcance explícito](LICENSE). El script inalámbrico original queda fuera de esa concesión, y las referencias externas conservan sus propias licencias y su autoría. No se incluyen credenciales reales, datos de sesiones, listas de cuentas, material operativo de suplantación ni archivos privados de la colección original.

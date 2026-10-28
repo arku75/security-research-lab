@@ -14,3 +14,10 @@ reports/
 *.pcapng
 *.sqlite*
 *.db
+resultados_wps.txt
+cracked.txt
+hs/
+captures/
+*.cap
+*.hccapx
+*.22000

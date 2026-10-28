@@ -1,3 +1,11 @@
+License scope
+
+The MIT grant below covers the newly prepared tools, fixtures, tests and
+documentation in this repository. It does not apply to the original archived
+script historical/wireless/wps_attack.sh, whose original license was not
+documented. See historical/wireless/README.md for its provenance and scope.
+External projects linked in the reference catalog retain their own licenses.
+
 MIT License
 
 Copyright (c) 2026 Ema Curk
