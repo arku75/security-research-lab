@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+private/
+local-data/
+reports/
+*.log
+*.pem
+*.key
+*.pcap
+*.pcapng
+*.sqlite*
+*.db
